@@ -1,0 +1,22 @@
+start_prg
+    number n, isprime := 1;
+        if n <= 1:
+        start
+            isprime := 0;
+        stop
+        loop number i := 2; i < n; i += 1:
+        start
+            if n % i == 0:
+            start
+                isprime := 0;
+            stop
+        stop
+        if isprime == 1:
+        start
+            print "nr is prime";
+        stop
+        else:
+        start
+            print "nr is not prime";
+        stop
+end_prg
